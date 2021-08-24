@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+
+.taglineContainer {
+  background: #fdf4d3;
+  font-family: "Style Script";
+  text-align: center;
+  padding: 80px 50px;
+  color: #705e1b;
+}
+
+.taglineContainer h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.taglineContainer span {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 883px) {
+  .taglineContainer {
+    padding: 30px 20px;
+  }
+  .taglineContainer h1 {
+    font-size: 30px;
+  }
+  .taglineContainer span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .taglineContainer {
+    padding: 30px 10px;
+  }
+  .taglineContainer h1 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .taglineContainer span {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 274px) {
+  .taglineContainer {
+    padding: 20px 10px;
+  }
+  .taglineContainer h1 {
+    font-size: 15px;
+  }
+}

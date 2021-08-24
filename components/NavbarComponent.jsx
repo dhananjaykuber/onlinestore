@@ -1,17 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/components/NavbarComponent.module.css";
 
 function NavbarComponent() {
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  const handleHamburger = () => {
+    if (hamburgerOpen) {
+      setHamburgerOpen(false);
+    } else {
+      setHamburgerOpen(true);
+    }
+  };
   return (
     <div className={styles.navbar}>
-      <div className={styles.hamburgerContainer}>
+      <div
+        className={
+          hamburgerOpen
+            ? `${styles.hamburgerContainer} ${styles.open}`
+            : `${styles.hamburgerContainer}`
+        }
+        onClick={handleHamburger}
+      >
         <div className={styles.hamburger}></div>
       </div>
       <div className={styles.logo}>
         <Link href="#">
-          <a>ShopDhananjayKuber</a>
+          <a>ShopeX</a>
         </Link>
       </div>
       <ul>

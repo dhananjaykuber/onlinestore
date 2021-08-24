@@ -1,0 +1,11 @@
+.copyrightContainer {
+  background: #808284;
+  padding: 18px 10px;
+}
+
+.copyrightContainer p {
+  color: #fdf4d3;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 0px;
+}

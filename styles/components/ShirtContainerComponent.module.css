@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .shirtsContainer {
-  padding: 4rem 0;
+  padding: 2rem 0;
   overflow-x: hidden;
 }
 
@@ -13,14 +13,14 @@
 
 .heading {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .heading h2 {
   position: relative;
   margin-top: 0;
   letter-spacing: 2.2px;
-  font-size: 30px;
+  font-size: 33px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: #808284;
@@ -31,4 +31,10 @@
   margin: 0;
   padding: 0;
   margin-left: -30px;
+}
+
+@media screen and (max-width: 550px) {
+  .heading h2 {
+    font-size: 25px;
+  }
 }
