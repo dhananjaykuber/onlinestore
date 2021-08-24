@@ -1,0 +1,112 @@
+.shirt {
+  float: left;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.productItem {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.productImage {
+  position: relative;
+  background-color: #dddddd;
+}
+
+.badge {
+  padding: 4px;
+  color: white;
+  background-color: #ff5722;
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 1px;
+  z-index: 10;
+}
+
+.productImageWrapper img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.productInformation {
+  padding: 1rem 0;
+}
+
+.productTitle {
+  font-weight: 400;
+  color: #222222;
+  text-align: center;
+  font-size: 18px;
+  margin: 0px;
+}
+
+.productMeta {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.currentPrice {
+  color: #808284;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.originalPrice {
+  color: #808284;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 2000px) {
+  .shirt {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 989px) {
+  .shirt {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 749px) {
+  .shirt {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .productMeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .productTitle {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .productTitle {
+    font-size: 15px;
+  }
+  .currentPrice {
+    font-size: 12px;
+  }
+  .originalPrice {
+    font-size: 10px;
+  }
+}

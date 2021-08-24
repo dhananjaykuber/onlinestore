@@ -1,0 +1,56 @@
+.header {
+  background: #808284;
+  width: 100%;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+}
+
+.icon {
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.header span {
+  font-size: 13px;
+  color: #fdf4d3;
+  cursor: pointer;
+}
+
+.account {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    padding: 10px 20px;
+  }
+  .header span {
+    font-size: 10px;
+    color: #fdf4d3;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    padding: 10px;
+  }
+  .icons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header span {
+    font-size: 9px;
+    letter-spacing: 1.1px;
+  }
+}
